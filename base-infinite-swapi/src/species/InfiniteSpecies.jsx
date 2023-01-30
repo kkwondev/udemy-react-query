@@ -34,7 +34,7 @@ export function InfiniteSpecies() {
           key={item.name}
           name={item.name}
           language={item.language}
-          averageLifespan={item.averageLifespan}
+          averageLifespan={item.average_lifespan}
         />
       ))}
       {isFetching && <div className="loading">Loading</div>}
