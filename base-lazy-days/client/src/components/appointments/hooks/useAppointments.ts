@@ -68,7 +68,7 @@ export function useAppointments(): UseAppointments {
 
   const selectFn = useCallback(
     (appointments: AppointmentDateMap) => {
-      getAvailableAppointments(appointments, user);
+      return getAvailableAppointments(appointments, user);
     },
     [user],
   );
